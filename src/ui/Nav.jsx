@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Nav() {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -42,12 +44,14 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link to="/" className="btn btn-ghost text-xl">
+          daisyUI
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <details>
